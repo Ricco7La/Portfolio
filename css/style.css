@@ -1,0 +1,42 @@
+body { 
+	font-family: 'Open Sans', sans-serif; 
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Raleway', sans-serif;
+}
+
+/*****************************
+		SIDE BAR
+*****************************/
+
+
+.side-menu { 
+	width: 100px;
+	background-color: #E6E6E6;
+	position: fixed;
+	z-index: 1;
+	height: 100%;
+}
+.main-menu {
+
+}
+.social-menu {
+	font-size: 30px;
+}
+.unstyled-list {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+/***************************** 
+		Main Content
+ ****************************/
+.main-content {
+	padding-left: 100px;
+}
+
+.section{
+	background-color: #666666;
+	color: #E6E6E6;
+}
