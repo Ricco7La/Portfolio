@@ -5,11 +5,27 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: 'Raleway', sans-serif;
 }
 
+/****************************
+		HELPERS
+****************************/
+
+.unstyled-list {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+.text-center{
+	text-align: center;
+}
+
 /*****************************
 		SIDE BAR
 *****************************/
 
-
+aside>a {
+	position: relative;
+	top: 30px;
+}
 .side-menu { 
 	width: 100px;
 	background-color: #E6E6E6;
@@ -17,16 +33,31 @@ h1, h2, h3, h4, h5, h6 {
 	z-index: 1;
 	height: 100%;
 }
+.side-menu a {
+	color: #666666;
+	text-decoration: none;
+	text-transform: uppercase;
+}
 .main-menu {
-
+	position: relative;
+	transform: rotate(270deg);
+	top: 80px;
 }
-.social-menu {
-	font-size: 30px;
+.main-menu ul{
+	display: flex;
+	flex-direction: row-reverse;
 }
-.unstyled-list {
-	list-style: none;
-	margin: 0px;
-	padding: 0px;
+.main-menu ul li{
+	margin: 0 15px
+}
+.social-menu ul {
+	font-size: 25px;
+	position: absolute;
+	bottom: 30px;
+	width: 100%;
+}
+.social-menu ul li {
+	padding: 3px 0px;
 }
 
 /***************************** 
@@ -39,4 +70,36 @@ h1, h2, h3, h4, h5, h6 {
 .section{
 	background-color: #666666;
 	color: #E6E6E6;
+}
+
+#section-home {
+	background-image: linear-gradient(rgba(66, 66, 66, .6), rgba(66, 66, 66, .6)), url(../images/background.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center bottom;
+}
+.quotation {
+	margin: 0 30%;
+
+}
+.quotation p{
+	font-size: 1.7em;
+	margin: 5px;
+}
+.quotation footer {
+	text-align: right;
+	font-size: 1.2em;
+	font-style:italic;
+}
+
+
+/*************************************
+		FullPages.js Overwrite
+**************************************/
+
+#fp-nav ul li a span {
+	background: #E6E6E6;
+}
+.fp-slidesNav ul li a span{
+	background: #E6E6E6;
 }
