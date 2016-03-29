@@ -3,17 +3,22 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width" />
 		<title>Emeric Beauchot - Développeur</title>
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700%7CRaleway:400,700' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="css/vendor/jquery.fullpage.css">
 		<link rel="stylesheet" href="css/vendor/slick.css">
+		<link rel="stylesheet" href="css/vendor/slick-theme.css">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
 		<aside class="side-menu text-center">
 			<a href="#home"><img src="images/DevIcon.svg" alt="Dev Icon"></a>
-			<nav class="main-menu">
+			<div class="btn-toggle-menu">
+				<i class="fa fa-bars"></i>
+			</div>
+			<nav class="main-menu hidden-menu">
 				<ul class="unstyled-list">
 					<li><a href="#home">Home</a></li>
 					<li><a href="#about">About</a></li>
@@ -76,18 +81,23 @@
 						<h3>Voici une présentation de certains de mes projects</h3>
 					</div>
 					<div class="col col-2-3">
-						a
+						<div class="slider-wrapper">
+							<div class="slider">
+							  <div><img class="img-responsive" src="images/Project/angrybirds.jpg" alt="Angry Birds"></div>
+							  <div><img class="img-responsive" src="images/Project/Okami.png" alt="Okami"></div>
+							  <div><img class="img-responsive" src="images/Project/NeverAlone.jpg" alt="Never Alone"></div>
+							</div>
+						</div>
 					</div>
 					<div class="col col-3">
 						<h4>My Project</h4>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta adipisci beatae veniam, praesentium qui? Sapiente quos quod quae modi rem ipsum odit doloremque tempora quia ea, sit ratione fugit animi.
+							Lorem ipsum dolor sit amet, consectetur adipisicing elitSoluta adipisci beatae veniam, praesentium qui? Sapientquos quod quae modi rem ipsum odit doloremque tempora quiea, sit ratione fugit animi.
 						</p>
 						<p class="text-center padding-button">
-							<a class="btn-primary" href="#">My button</a>
+							<a class="btn-primary" href="#">En Savoir Plus</a>
 						</p>
 					</div>
-					
 				</div>
 			</section>
 			<section id="section-contact" class="section">

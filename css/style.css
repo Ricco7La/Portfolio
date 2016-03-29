@@ -36,6 +36,7 @@ h1, h2, h3, h4, h5, h6 {
 	padding: 40px;
 }
 
+
 /*****************************
 			GRID
 *****************************/
@@ -81,6 +82,64 @@ h1, h2, h3, h4, h5, h6 {
 	.col-1, .col-2, .col-3, .col-4, .col-5, .col-6 { width: 100%; }
 }
 
+/****************************
+		Slider
+ ***************************/
+
+.img-responsive {
+	width: 100%;
+}
+.slider {
+	width: 850px;
+}
+.slider-wrapper {
+	overflow: hidden;
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: .95;
+    color: #E6E6E6;
+  	animation-duration: 2s;
+  	animation-name: glow;
+  	animation-iteration-count: infinite
+
+}
+
+@keyframes glow {
+  from {
+    transform: scale(1.3); 
+  }
+  50% {
+  	opacity: .75;
+    transform: scale(2);
+  }
+  to {
+    transform: scale(1.3);
+  }
+}
+
+.slick-dots li button:before {
+    opacity: .25;
+    color: #E6E6E6;
+}
+
+@media screen and (max-width: 1600px) {
+	.slider {
+		width: 700px;
+	}
+}
+@media screen and (max-width: 1400px) {
+	.slider {
+		width: 600px;
+	}
+}
+@media screen and (max-width: 1024px) {
+	.slider {
+		width: 500px;
+	}
+}
+
+
 /*****************************
 		SIDE BAR
 *****************************/
@@ -121,6 +180,61 @@ aside>a {
 }
 .social-menu ul li {
 	padding: 3px 0px;
+}
+.btn-toggle-menu {
+	display: none;
+}
+
+@media screen and (max-width: 600px) {
+	.side-menu { 
+		width: 100%;
+		height: 50px;
+	}
+	aside>a {
+		top: 10px;
+		float: left;
+		margin-left: 10px; 
+	}
+	aside>a>img {
+		height: 30px;
+		width: 30px;
+	}
+	.hidden-menu {
+		display: none;
+	}
+	.main-menu {
+		transform: none;
+		top: 50px;
+		opacity: 0.92;
+	}
+	.main-menu ul{
+		display: block;
+		background: #E6E6E6;
+	}
+	.main-menu ul li{
+		padding: 12px;
+		margin: 0 0;
+		border-top-style: solid;
+		border-top-color: #666666;
+		border-top-width: 1px;
+	}
+	body .main-content {
+	    padding-left: 0px;
+	}
+	.social-menu {
+		display: none;
+	}
+	.btn-toggle-menu {
+		display: block;
+		float: right;
+		cursor: pointer;
+	}
+	.btn-toggle-menu>i {
+		font-size: 25px;
+		margin: 12.5px;
+		color: #666666;
+	}
+	
 }
 
 /***************************** 
