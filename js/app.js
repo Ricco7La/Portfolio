@@ -1,4 +1,6 @@
 $(document).ready(function(){
+
+	// FullPage
 	$('#fullpage').fullpage({
         anchors:['home', 'about', 'works', 'contact'],
         scrollingSpeed: 1750,
@@ -6,6 +8,10 @@ $(document).ready(function(){
         navigationTooltips: ['Home', 'About Me', 'Works', 'Contact']
     });
 
+    document.getElementById(id)
+
+
+	// Google Map
 	function initialize() {
 	  var myLatLong = new google.maps.LatLng(49.97366666666667,4.529833333333333);
 	  var mapProp = {
@@ -29,6 +35,8 @@ $(document).ready(function(){
 	}
 	google.maps.event.addDomListener(window, 'load', initialize);
 
+
+	// Slider
 	$('.slider').slick({
 		dots: true,
 		infinite: true,
@@ -38,6 +46,9 @@ $(document).ready(function(){
 		arrows: false
 	});
 
+
+
+	// Smartphone
 	$(".btn-toggle-menu").click(function() {
     	$(".main-menu").toggleClass("hidden-menu");
     });
