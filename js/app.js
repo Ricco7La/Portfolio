@@ -2,6 +2,7 @@ $(document).ready(function(){
 
 	// FullPage
 	$('#fullpage').fullpage({
+				menu: '#menu',
         anchors:['home', 'about', 'works', 'contact'],
         scrollingSpeed: 1750,
         navigation: true,
