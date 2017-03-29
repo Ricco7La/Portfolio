@@ -1,4 +1,19 @@
+// GLOBAL
 var _CurrentSlide = 0;
+function btnMoreClick(){
+	$.fn.fullpage.setAllowScrolling(false);
+    $.fn.fullpage.setKeyboardScrolling(false);
+   	$.fn.fullpage.moveSlideRight();
+   	document.getElementById("btnBack").style.visibility = "visible";
+}
+function btnBackClick(){
+   	$.fn.fullpage.setAllowScrolling(false);
+    $.fn.fullpage.setKeyboardScrolling(false);
+   	$.fn.fullpage.moveSlideLeft();
+   	document.getElementById("btnBack").style.visibility = "hidden";
+}
+
+//INIT
 $(document).ready(function(){
 
 	//fullpage
@@ -30,16 +45,7 @@ $(document).ready(function(){
     	
     });
 
-	$('#btnMore').on('click', function(){
-		$.fn.fullpage.setAllowScrolling(false);
-        $.fn.fullpage.setKeyboardScrolling(false);
-    	$.fn.fullpage.moveSlideRight();
-	});
-    $('#btnBack').on('click', function(){
-    	$.fn.fullpage.setAllowScrolling(false);
-        $.fn.fullpage.setKeyboardScrolling(false);
-    	$.fn.fullpage.moveSlideLeft();
-	});
+    $.fn.fullpage.setKeyboardScrolling(false, 'left, right');
 
 	//Google Map
 	function initialize() {
@@ -69,27 +75,43 @@ $(document).ready(function(){
 	$('.slider').slick({
 		dots: true,
 		infinite: true,
-		speed: 500,
+		speed: 300,
 		fade: true,
 		cssEase: 'linear',
-		arrows: false
+		arrows: false,
+		adaptiveHeight: true
 	});
 
+	// On before slide change
+	$('.slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+  		document.getElementById("ProjectDesc" + currentSlide).className = "hidden-element";
+  		document.getElementById("ProjectDesc" + nextSlide).className = "";
+  		document.getElementById("ProjectMore" + currentSlide).className = "hidden-element";
+  		document.getElementById("ProjectMore" + nextSlide).className = "";
+	});
 	
+
 	var dotsList = document.getElementsByClassName("slick-dots")[0];
+	var dotsListContainer = document.createElement('div');
+	dotsList.parentElement.replaceChild(dotsListContainer,dotsList);
+
+	dotsListContainer.classList.add('flex-container');
+	dotsList.classList.add('flex-element');
 
 	var prevArrow = document.createElement('button');
 	prevArrow.innerHTML = '<i class="fa fa-arrow-circle-left" aria-hidden="true"></i>';
 	prevArrow.classList.add('leftArrow');
 	prevArrow.classList.add('arrows');
+	prevArrow.classList.add('flex-element');
 	var nextArrow = document.createElement('button');
 	nextArrow.innerHTML = '<i class="fa fa-arrow-circle-right" aria-hidden="true"></i>';
 	nextArrow.classList.add('rightArrow');
 	nextArrow.classList.add('arrows');
+	nextArrow.classList.add('flex-element');
 
-	dotsList.insertBefore(prevArrow, dotsList.firstChild);
-
-	dotsList.appendChild(nextArrow);
+	dotsListContainer.appendChild(prevArrow);
+	dotsListContainer.appendChild(dotsList);
+	dotsListContainer.appendChild(nextArrow);
 
 	$('.leftArrow').on('click', function(){
     	$('.slider').slick("slickPrev");
@@ -102,4 +124,6 @@ $(document).ready(function(){
 	$(".btn-toggle-menu").click(function() {
     	$(".main-menu").toggleClass("hidden-menu");
     });
+	
+
 });

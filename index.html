@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/png" href="images/favicon.png" />
 		<title>Emeric Beauchot - Développeur</title>
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700%7CRaleway:400,700' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -91,34 +92,418 @@
 					<div class="row">
 						<div class="col col-1">
 							<h2 class="underlined-title">My works</h2>
-							<h3>Voici une présentation de certains de mes projects</h3>
+							<h3>Voici une présentation de certains de mes projects. J'en ai encore pas mal à ajouter mais certains on besoin de petites modifications.</h3>
 						</div>
 						<div class="col col-2-3">
+
+							<!-- Slide Image -->
 							<div class="slider-wrapper">
-								<div class="slider">
-								  <img class="img-responsive" src="images/Project/angrybirds.jpg" alt="Angry Birds">
-								  <img class="img-responsive" src="images/Project/Okami.png" alt="Okami">
-								  <img class="img-responsive" src="images/Project/NeverAlone.jpg" alt="Never Alone">
+								<div id="projectSlider" class="slider">
+									<!-- Project 0 -->
+									<img class="img-responsive" src="images/Project/UnReap-it.png" alt="UnReap-it">
+									<!-- Project 1 -->
+									<img class="img-responsive" src="images/Project/Heroic_Age.png" alt="Heroic Age">
+									<!-- Project 2 -->
+															
+									<img class="img-responsive" src="images/Project/Horloge_Graphique.png" alt="Horloge Graphique">
+									<!-- Project 3 -->
+									<img class="img-responsive" src="images/Project/Moteur_JV_JS.png" alt="Moteur JV JS">
+									<!-- Project 4 -->
+									<img class="img-responsive" src="images/Project/Nightmare.png" alt="Nightmare">		  
+									<!-- Project 5 -->
+									<img class="img-responsive" src="images/Project/Colorarium.png" alt="Colorarium">
+									<!-- Project 6 -->
+									<img class="img-responsive" src="images/Project/Ace-steroids.png" alt="Ace-steroids">
+									<!-- Project 7 -->
+									<img class="img-responsive" src="images/Project/TechnoFoot.png" alt="TechnoFoot">
+									<!-- Project 8 -->
+									<!-- <img class="img-responsive" src="images/Project/Simon.png" alt="Simon"> -->
+									<!-- Project 9 -->
+									<!-- <img class="img-responsive" src="images/Project/Application_Modulaire_Cordova.png" alt="Application Modulaire Cordova"> -->
+									<!-- Project 10 -->
+									<!-- <img class="img-responsive" src="images/Project/Technotel.png" alt="Technotel"> -->
+									<!-- Project 11 -->
+									<!-- <img class="img-responsive" src="images/Project/Application_Windows_Phone.png" alt="Application Windows Phone"> -->
+									<!-- Project 12 -->
+									<!-- <img class="img-responsive" src="images/Project/Memory_WebGL.png" alt="Memory WebGL"> -->
+									<!-- Project 13 -->
+									<!-- <img class="img-responsive" src="images/Project/Shmup.png" alt="Shoot'em up">	 -->							  
 								</div>
 							</div>
+
 						</div>
 						<div class="col col-3">
-							<div>
-								<h4>My Project</h4>
+
+							<!-- Slide Description -->
+							<div class="projectDesc">
+
+								<!-- Project 0 -->
+								<div id="ProjectDesc0">
+									<div>
+										<h4>UnReap-it</h4>
+									</div>
+									<p>
+										Un project fait en groupe pendant 2 semaine pour la formation GameDev de Technobel. Il utilise phaser.io, un moteur de jeu 2D en javascript. Nous avons fait 4 niveaux + un Boss final. Il est assez facile de créer de nouveaux niveaux grâce à <a href="http://www.mapeditor.org/">Tiled</a> et un script d'importation.
+									</p>
+									<p class="text-center padding-button">
+										<a id="btnMore" class="btn-primary" onclick=" window.open('http://ricco7la.github.io/UnReap-It/','_blank')"">Démo</a>
+									</p>
+								</div>
+
+								<!-- Project 1 -->
+								<div id="ProjectDesc1" class="hidden-element">
+									<div>
+										<h4>Heroic Age</h4>
+									</div>
+									<p>
+										Le project final de ma formation .Net Developper. Ce project a été réalisé sous Unity3D en C# avec une équipe composée de 3 développeur, un chef de project et un graphiste.
+									</p>
+									<p>
+										Il s'agit d'un jeu de cartes et de stratégies. Les régles sont assez complexes. Nous avions prévu de faire une IA mais vu le manque de temps, nous avons du la simplifier énormement.
+									</p>
+									<p>
+										Ce jeu à été prévu pour pc mais je vais essayer de faire une version web dés que possible.
+									</p>
+									<!-- <p class="text-center padding-button">
+										<a id="btnMore" onclick="btnMoreClick()" class="btn-primary" href="#">En Savoir Plus</a>
+									</p> -->
+								</div>
+
+								<!-- Project 2 -->
+								<div id="ProjectDesc2" class="hidden-element">
+									<div>
+										<h4>Horloge Graphique</h4>
+									</div>
+									<p>
+										Une simple horloge graphique faite en canvas.
+									</p>
+									<h6>
+										<u>Légende (de haut en bas): </u>
+									</h6>
+									<h6>
+										<span style="color:green"> S </span>: Seconde <br>
+										<span style="color:red">M </span> : Minute  <br>
+										<span style="color:purple">H </span> : Heure  <br>
+										<span style="color:#F2DF19">D </span> : Date  <br>
+										<span style="color:lightblue">M </span> : Mois  <br>
+										<span style="color:#5EDC88">J </span> : Jour  <br>
+									</h6>
+									<a id="btnMore" onclick="btnMoreClick()" class="btn-primary" href="#">En Savoir Plus</a>
+								</div>
+
+								<!-- Project 3 -->
+								<div id="ProjectDesc3" class="hidden-element">
+									<div>
+										<h4>TechnoEngine</h4>
+									</div>
+									<p>
+										Un moteur de jeu vidéo javascript crée à partir de zéro lors de la formation GameDev de Technobel. Nous avons pris Phaser.io comme modèle et avons reproduit les fonctionnalités intéressante de celui ci. 
+									</p>
+									<p>
+										Il a été utilisé pour créer les quatres prochains jeux.
+									</p>
+									<p class="text-center padding-button">
+										<a id="btnMore" class="btn-primary" onclick=" window.open('https://github.com/Ricco7La/Technobel-GameEngine','_blank')"">Voir le code sur Github</a>
+									</p>
+								</div>
+
+								<!-- Project 4 -->
+								<div id="ProjectDesc4" class="hidden-element">
+									<div>
+										<h4>Nightmare</h4>
+									</div>
+									<p>
+										Un jeu que j'ai créé entièrement grâce à TechnoEngine, le moteur de jeu que nous avons créé.
+										Il utilise un serveur Node.JS pour permetre au joueur de contrôler le personnage grâce à son smartphone. Le jeu se joue à 2, un joueur controle le personnage sans voir l'écran et le/les  autres doivent le diriger.
+									</p>
+									<p class="text-center padding-button">
+										<a id="btnMore" onclick="btnMoreClick()" class="btn-primary" href="#">En Savoir Plus</a>
+									</p>
+								</div>
+
+								<!-- Project 5 -->
+								<div id="ProjectDesc5" class="hidden-element">
+									<div>
+										<h4>Colorarium</h4>
+									</div>
+									<p>
+										Un jeu créé en groupe grâce à TechnoEngine, le moteur de jeu que nous avons créé.
+										Il utilise un serveur Node.JS pour permettre un système multijoueur.
+										Le but du jeu est de contrôler le plus de case que les autres.
+									</p>
+									<p class="text-center padding-button">
+										<a id="btnMore" onclick="btnMoreClick()" class="btn-primary" href="#">En Savoir Plus</a>
+									</p>
+								</div>
+
+								<!-- Project 6 -->
+								<div id="ProjectDesc6" class="hidden-element">
+									<div>
+										<h4>Ace-steroids</h4>
+									</div>
+									<p>
+										Un jeu créé en groupe grâce à TechnoEngine, le moteur de jeu que nous avons créé.
+										Ce jeu utilise une webcam et un pointeur laser. Vous devez créé  un vaisseau spatial en détruisant les astéroïdes grâce au pointeur laser.
+									</p>
+									<p class="text-center padding-button">
+										<a id="btnMore" onclick="btnMoreClick()" class="btn-primary" href="#">En Savoir Plus</a>
+									</p>
+								</div>
+
+								<!-- Project 7 -->
+								<div id="ProjectDesc7" class="hidden-element">
+									<div>
+										<h4>TechnoFoot</h4>
+									</div>
+									<p>
+										Un jeu créé par un autre groupe grâce à TechnoEngine, le moteur de jeu que nous avons créé.
+										Grâce à une webcam vous devez jongler avec le tête.
+									</p>
+									<p class="text-center padding-button">
+										<a id="btnMore" onclick="btnMoreClick()" class="btn-primary" href="#">En Savoir Plus</a>
+									</p>
+								</div>
+
+								<!-- Project 8 -->
+								<!-- <div id="ProjectDesc8" class="hidden-element">
+									<div>
+										<h4>Simon</h4>
+									</div>
+									<p>
+										
+									</p>
+									<p class="text-center padding-button">
+										<a id="btnMore" onclick="btnMoreClick()" class="btn-primary" href="#">En Savoir Plus</a>
+									</p>
+								</div> -->
+
+								<!-- Project 9 -->
+								<!-- <div id="ProjectDesc9" class="hidden-element">
+									<div>
+										<h4>Application Modulaire Cordova</h4>
+									</div>
+									<p>
+										
+									</p>
+									<p class="text-center padding-button">
+										<a id="btnMore" onclick="btnMoreClick()" class="btn-primary" href="#">En Savoir Plus</a>
+									</p>
+								</div> -->
+
+								<!-- Project 10 -->
+								<!-- <div id="ProjectDesc10" class="hidden-element">
+									<div>
+										<h4>Technotel</h4>
+									</div>
+									<p>
+										
+									</p>
+									<p class="text-center padding-button">
+										<a id="btnMore" onclick="btnMoreClick()" class="btn-primary" href="#">En Savoir Plus</a>
+									</p>
+								</div> -->
+
+								<!-- Project 11 -->
+								<!-- <div id="ProjectDesc11" class="hidden-element">
+									<div>
+										<h4>Application Windows Phone</h4>
+									</div>
+									<p>
+										
+									</p>
+									<p class="text-center padding-button">
+										<a id="btnMore" onclick="btnMoreClick()" class="btn-primary" href="#">En Savoir Plus</a>
+									</p>
+								</div> -->
+
+								<!-- Project 12 -->
+								<!-- <div id="ProjectDesc12" class="hidden-element">
+									<div>
+										<h4>Memory WebGL</h4>
+									</div>
+									<p>
+										
+									</p>
+									<p class="text-center padding-button">
+										<a id="btnMore" onclick="btnMoreClick()" class="btn-primary" href="#">En Savoir Plus</a>
+									</p>
+								</div> -->
+
+								<!-- Project 13 -->
+								<!-- <div id="ProjectDesc13" class="hidden-element">
+									<div>
+										<h4>Shoot'em Up Pixi.js</h4>
+									</div>
+									<p>
+										
+									</p>
+									<p class="text-center padding-button">
+										<a id="btnMore" onclick="btnMoreClick()" class="btn-primary" href="#">En Savoir Plus</a>
+									</p>
+								</div> -->
 							</div>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elitSoluta adipisci beatae veniam, praesentium qui? Sapientquos quod quae modi rem ipsum odit doloremque tempora quiea, sit ratione fugit animi.
-							</p>
-							<p class="text-center padding-button">
-								<a id="btnMore" class="btn-primary" href="#">En Savoir Plus</a>
-							</p>
+
 						</div>
+						
 					</div>
 				</div>
 
 				<!-- Page 2 -->
 				<div class="slide" data-anchor="MoreAboutThisProject">
-					<a id="btnBack" class="btn-primary" href="#">Back</a>
+					<!-- Slide More -->
+					<div class="row">
+
+						<!-- Project 0 -->
+						<div id="ProjectMore0" class="slider">
+							<!-- <div class="iframe-responsive-wrapper">
+							    <img class="iframe-ratio" src="data:image/gif;base64,R0lGODlhEAAJAIAAAP///wAAACH5BAEAAAAALAAAAAAQAAkAAAIKhI+py+0Po5yUFQA7"/>
+							    <iframe src="http://ricco7la.github.io/UnReap-It/" width="640" height="360" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+							</div> -->
+						</div>
+
+						<!-- Project 1 -->
+						<div id="ProjectMore1" class="hidden-element">
+							<div>
+								<h4>My Project 2</h4>
+							</div>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elitSoluta adipisci beatae veniam, praesentium qui?Sapientquos quod quae modi rem ipsum odit doloremque tempora quiea, sit ratione fugit animi.
+							</p>
+						</div>
+
+						<!-- Project 2 -->
+						<div id="ProjectMore2" class="hidden-element">
+							<iframe width="1200" height="900" src="https://ricco7la.github.io/MiniProjects/CANVAS_CLOCK/" scrolling="no" frameBorder="0" style="-webkit-transform:scale(0.70);-moz-transform-scale(0.70);"></iframe>
+							
+						</div>
+
+						<!-- Project 3 -->
+						<div id="ProjectMore3" class="hidden-element">
+							
+						</div>
+
+						<!-- Project 4 -->
+						<div id="ProjectMore4" class="hidden-element">
+							<div class="col col-2"><iframe width="560" height="315" src="https://www.youtube.com/embed/xHur8zX9X6w" frameborder="0" allowfullscreen></iframe></div>
+							
+							<div class="col col-2">
+								<div>
+									<h4>Vidéo de présentation</h4>
+								</div>
+								<p>
+								Une vidéo faite par <a href="www.technobel.be">Technobel</a> pour présenter 4 jeux créés lors de la formation GameDev: TechnoFoot, Ace-steroids, Nightmare et Colorarium. 
+								</p>
+							</div>
+						</div>
+
+						<!-- Project 5 -->
+						<div id="ProjectMore5" class="hidden-element">
+							<div class="col col-2"><iframe width="560" height="315" src="https://www.youtube.com/embed/xHur8zX9X6w" frameborder="0" allowfullscreen></iframe></div>
+							
+							<div class="col col-2">
+								<div>
+									<h4>Vidéo de présentation</h4>
+								</div>
+								<p>
+								Une vidéo faite par <a href="www.technobel.be">Technobel</a> pour présenter 4 jeux créés lors de la formation GameDev: TechnoFoot, Ace-steroids, Nightmare et Colorarium. 
+								</p>
+							</div>
+						</div>
+
+						<!-- Project 6 -->
+						<div id="ProjectMore6" class="hidden-element">
+							<div class="col col-2"><iframe width="560" height="315" src="https://www.youtube.com/embed/xHur8zX9X6w" frameborder="0" allowfullscreen></iframe></div>
+							
+							<div class="col col-2">
+								<div>
+									<h4>Vidéo de présentation</h4>
+								</div>
+								<p>
+								Une vidéo faite par <a href="www.technobel.be">Technobel</a> pour présenter 4 jeux créés lors de la formation GameDev: TechnoFoot, Ace-steroids, Nightmare et Colorarium. 
+								</p>
+							</div>
+						</div>
+
+						<!-- Project 7 -->
+						<div id="ProjectMore7" class="hidden-element">
+							<div class="col col-2"><iframe width="560" height="315" src="https://www.youtube.com/embed/xHur8zX9X6w" frameborder="0" allowfullscreen></iframe></div>
+							
+							<div class="col col-2">
+								<div>
+									<h4>Vidéo de présentation</h4>
+								</div>
+								<p>
+								Une vidéo faite par <a href="www.technobel.be">Technobel</a> pour présenter 4 jeux créés lors de la formation GameDev: TechnoFoot, Ace-steroids, Nightmare et Colorarium. 
+								</p>
+							</div>
+							
+						</div>
+
+						<!-- Project 8 -->
+						<div id="ProjectMore8" class="hidden-element">
+							<div>
+								<h4>My Project 9</h4>
+							</div>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elitSoluta adipisci beatae veniam, praesentium qui?Sapientquos quod quae modi rem ipsum odit doloremque tempora quiea, sit ratione fugit animi.
+							</p>
+						</div>
+
+						<!-- Project 9 -->
+						<div id="ProjectMore9" class="hidden-element">
+							<div>
+								<h4>My Project 10</h4>
+							</div>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elitSoluta adipisci beatae veniam, praesentium qui?Sapientquos quod quae modi rem ipsum odit doloremque tempora quiea, sit ratione fugit animi.
+							</p>
+						</div>
+
+						<!-- Project 10 -->
+						<div id="ProjectMore10" class="hidden-element">
+							<div>
+								<h4>My Project 11</h4>
+							</div>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elitSoluta adipisci beatae veniam, praesentium qui?Sapientquos quod quae modi rem ipsum odit doloremque tempora quiea, sit ratione fugit animi.
+							</p>
+						</div>
+
+						<!-- Project 11 -->
+						<div id="ProjectMore11" class="hidden-element">
+							<div>
+								<h4>My Project 11</h4>
+							</div>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elitSoluta adipisci beatae veniam, praesentium qui?Sapientquos quod quae modi rem ipsum odit doloremque tempora quiea, sit ratione fugit animi.
+							</p>
+						</div>
+
+						<!-- Project 12 -->
+						<div id="ProjectMore12" class="hidden-element">
+							<div>
+								<h4>My Project 12</h4>
+							</div>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elitSoluta adipisci beatae veniam, praesentium qui?Sapientquos quod quae modi rem ipsum odit doloremque tempora quiea, sit ratione fugit animi.
+							</p>
+						</div>
+
+						<!-- Project 13 -->
+						<div id="ProjectMore13" class="hidden-element">
+							<div>
+								<h4>My Project 13</h4>
+							</div>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elitSoluta adipisci beatae veniam, praesentium qui?Sapientquos quod quae modi rem ipsum odit doloremque tempora quiea, sit ratione fugit animi.
+							</p>
+						</div>
+
+					</div>
+					<div>
+						<a id="btnBack" onclick="btnBackClick()" style="visibility: hidden;" class="btn-primary btn_fixed" href="#">Back</a>	
+					</div>
+					
 				</div>
 
 			</section>
@@ -129,7 +514,8 @@
 				<div class="row">
 					<div class="col col-1">
 						<h2 class="underlined-title">About Me</h2>
-						<h3>N'hésitez pas à me joindre pour plus d'information</h3>
+						<h3>Vous pouvez en trouvez plus d'information dans mon <a href="#" target="_blank">C.V.</a> .</h3>
+						<h3>N'hésitez pas à me joindre pour plus d'information.</h3>
 					</div>
 					<div class="col col-2">
 						<h4>Coordonées</h4>
@@ -137,10 +523,10 @@
 							Adresse:<address>Try-pochaux, 34<br>5660 Brûly</address>
 						</p>
 						<p>
-							<i class="fa fa-phone"></i> <a href="tel:+3260123456">+32(0)60/12.34.56</a>
+							<i class="fa fa-phone"></i> <a href="tel:+3260123456">&nbsp;&nbsp;&nbsp;+32(0)60/12.34.56</a>
 						</p>
 						<p>
-							<i class="fa fa-envelope-o"></i> <a href="mailto:emeric.beauchot@gmail.com" target="_blank"><img src="" alt="mail"></a>
+							<i class="fa fa-envelope-o"></i> <a href="mailto:emeric.beauchot@gmail.com" target="_blank">&nbsp;&nbsp;&nbsp;emeric.beauchot@gmail.com</a>
 						</p>
 					</div>
 					<div class="col col-2">
