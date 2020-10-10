@@ -13,6 +13,8 @@ function btnBackClick(){
    	document.getElementById("btnBack").style.visibility = "hidden";
 }
 
+
+
 //INIT
 $(document).ready(function(){
 
