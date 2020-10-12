@@ -14,6 +14,19 @@
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
+
+		<script language="Javascript">
+		    window.onload=function(){
+		    var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));
+		    if (mobile) {
+		        alert("Ce site web n'est pas adapté a une consultation sur smartphone. Les projets qu'il contient ont été prévu pour fonctionner sur un ordinateur.");              
+		    } else {
+
+		    }
+		  }
+		</script>
+
+
 		<aside class="side-menu text-center">
 			<a href="#home"><img src="images/DevIcon.svg" alt="Dev Icon"></a>
 			<div class="btn-toggle-menu">
@@ -527,17 +540,6 @@
 		</main>
 
 		<!-- Scripts -->
-		<script language="Javascript">
-		    window.onload=function(){
-		    var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));
-		    if (mobile) {
-		        alert("Ce site web n'est pas adapté a une consultation sur smartphone.");              
-		    } else {
-
-		    }
-		  }
-		</script>
-
 		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCJnZwQYM67oJTRbFaQ6r1oW0wAYfxOznM"></script>
 		<script src="js/vendor/jquery-1.12.2.min.js"></script>
 		<script src="js/vendor/jquery.fullpage.js"></script>
